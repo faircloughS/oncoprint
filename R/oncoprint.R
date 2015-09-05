@@ -79,7 +79,7 @@ oncoprint <- function(M, keys=list(somatic="MUT", germline="GERMLINE", amp="AMP"
     geom_tile(data=data$del, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill="blue", colour=NA, size=2) + 
     geom_tile(data=data$somatic, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=square_w, height=square_h, fill="forestgreen") + 
     geom_tile(data=data$germline, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=square_w, height=square_h, fill="purple", colour=NA) + 
-    geom_tile(data=data$upreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="red", size=2) + 
-    geom_tile(data=data$downreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="blue", size=2) + 
+    geom_tile(data=data$upreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="red", size=1) + 
+    geom_tile(data=data$downreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="blue", size=1) + 
     theme_minimal() + xlab("Sample") + ylab("Gene")
 }
